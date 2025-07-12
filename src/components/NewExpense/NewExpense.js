@@ -21,7 +21,7 @@ const NewExpense = (props) => {
     <div className="new-expense">
       {isEditing==false && (<button type="button" onClick={()=>{
     setIsEditing(true)
-  }}></button>)}
+  }}>Add Expense</button>)}
       {isEditing==true && (<ExpenseForm onSaveExpenseData={saveExpenseData} onAdd={()=>{
     setIsEditing(false)}}/>)}
     </div>
